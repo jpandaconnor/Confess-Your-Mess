@@ -45,7 +45,7 @@
         <div class="container main-section" style="display: none;">
             <br>
                 <div class="row center" style="padding: 0 20px 0 20px">
-                    <h5 class="header col s12 light">The confession I think would go here and that would pretty much be that or they do something else I don't fucking know anymore</h5>
+                    <h5 class="header col s12 light" id="confession_text"></h5>
                 </div>
 
                 <div class="row center">
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="row right" style="margin-right: 20px;">
-                <p>Posted on: 13/11/2017</p>
+                <p id="date_posted"></p>
             </div>
             <br><br>
 

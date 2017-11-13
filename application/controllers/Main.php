@@ -6,6 +6,8 @@
  * Time: 19:53
  */
 
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 class Main extends CYM_Controller {
     public function __construct()
     {
@@ -15,12 +17,16 @@ class Main extends CYM_Controller {
     // On load, loads a confession via JS AJAX
     public function index() {
 
-
         $this->load->view('main/index');
     }
 
-    public function all_have_sinned_and_fall_short_of_the_glory_of_god() {
 
+    // This will get a confession in the database
+    public function all_have_sinned_and_fall_short_of_the_glory_of_god() {
+        $amount = $this->sin_model->get_confession_count()->amount;
+        $id_to_get = rand(1, $amount);
+
+        echo json_encode($this->sin_model->get_confession($id_to_get));
     }
 }
 

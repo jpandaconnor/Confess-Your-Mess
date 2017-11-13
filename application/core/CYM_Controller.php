@@ -14,6 +14,8 @@ class CYM_Controller extends CI_Controller {
         parent::__construct();
 
         $data = array();
+
+        $this->load->model('sin_model');
         
         $this->load->helper('url');
     }
