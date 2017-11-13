@@ -21,25 +21,37 @@
     <nav class="grey darken-2" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">About</a></li>
+                <li><a href="">About</a></li>
             </ul>
 
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Submit</a></li>
+                <li><a class="modal-trigger" href="#submit_confession_modal">Submit</a></li>
             </ul>
 
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Read</a></li>
+                <li><a href="<?php echo base_url('main/'); ?>">Read</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Read</a></li>
+                <li><a href="<?php echo base_url('main/'); ?>">Read</a></li>
                 <li><a href="#">Submit</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+
+    <!-- Modal stuff here for importing in later on !-->
+
+    <div id="submit_confession_modal" class="modal fixed-footer">
+        <div class="modal-content">
+            <h4>Add a confession</h4>
+            <p>Add any confession you want to here</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+        </div>
+    </div>
 
     <div class="section" id="index-banner" style="margin-top: 250px;">
         <div class="container main-section" style="display: none;">
