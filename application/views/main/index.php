@@ -47,6 +47,7 @@
         <div class="modal-content">
             <h4>Add a confession</h4>
             <form name="confess_form" class="col s12" method="" action="">
+                <br>
                 <div class="input-field col s12">
                     <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
                     <label for="confession_to_send">Confession</label>
@@ -54,10 +55,9 @@
 
                 <center><button class="btn green waves-effect waves-light" type="button">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
             </form>
-            <p>Add any confession you want to here</p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+            <a href="#!" class="small modal-close waves-effect waves-green btn-flat ">Submit</a>
         </div>
     </div>
 
