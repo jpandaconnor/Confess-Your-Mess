@@ -18,6 +18,10 @@ class Main extends CYM_Controller {
 
         $this->load->view('main/index');
     }
+
+    public function all_have_sinned_and_fall_short_of_the_glory_of_god() {
+
+    }
 }
 
 ?>

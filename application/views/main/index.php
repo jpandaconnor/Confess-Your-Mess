@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="grey" role="navigation">
+    <nav class="grey darken-2" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">About</a></li>
@@ -42,14 +42,14 @@
     </nav>
 
     <div class="section" id="index-banner" style="margin-top: 250px;">
-        <div class="container main-section">
+        <div class="container main-section" style="display: none;">
             <br>
                 <div class="row center" style="padding: 0 20px 0 20px">
                     <h5 class="header col s12 light">The confession I think would go here and that would pretty much be that or they do something else I don't fucking know anymore</h5>
                 </div>
 
                 <div class="row center">
-                    <button type="button" class="waves-effect waves-light btn" id="read_another">Read Another</button>
+                    <button type="button" class="waves-effect waves-light btn" style="border-radius: 10px;" id="read_another">Read Another</button>
                 </div>
 
                 <div class="row right" style="margin-right: 20px;">
@@ -62,5 +62,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+
+    <script src="<?php echo base_url('assets/main.js'); ?>"></script>
 </body>
 </html>
