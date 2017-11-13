@@ -12,7 +12,7 @@ class Main extends CYM_Controller {
         parent::__construct();
     }
 
-    // Shows the home page needed
+    // On load, loads a confession via JS AJAX
     public function index() {
 
 

@@ -21,11 +21,21 @@
     <nav class="grey" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Submit</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Read</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li><a href="#">Read</a></li>
+                <li><a href="#">Submit</a></li>
+                <li><a href="#">About</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -33,13 +43,17 @@
 
     <div class="section" id="index-banner" style="margin-top: 250px;">
         <div class="container main-section">
-            <br><br>
-            <h1 class="header center orange-text">Starter Template</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+            <br>
+                <div class="row center" style="padding: 0 20px 0 20px">
+                    <h5 class="header col s12 light">The confession I think would go here and that would pretty much be that or they do something else I don't fucking know anymore</h5>
+                </div>
+
+                <div class="row center">
+                    <button type="button" class="waves-effect waves-light btn" id="read_another">Read Another</button>
+                </div>
+
+                <div class="row right" style="margin-right: 20px;">
+                <p>Posted on: 13/11/2017</p>
             </div>
             <br><br>
 
