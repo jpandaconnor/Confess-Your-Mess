@@ -34,7 +34,7 @@
 
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="<?php echo base_url('main/'); ?>">Read</a></li>
-                <li><a href="#">Submit</a></li>
+                <li><a class="modal-trigger" href="#submit_confession_modal">Submit</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -46,6 +46,14 @@
     <div id="submit_confession_modal" class="modal fixed-footer">
         <div class="modal-content">
             <h4>Add a confession</h4>
+            <form name="confess_form" class="col s12" method="" action="">
+                <div class="input-field col s12">
+                    <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
+                    <label for="confession_to_send">Confession</label>
+                </div>
+
+                <center><button class="btn green waves-effect waves-light" type="button">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
+            </form>
             <p>Add any confession you want to here</p>
         </div>
         <div class="modal-footer">
@@ -74,6 +82,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
     <script src="<?php echo base_url('assets/main.js'); ?>"></script>
 </body>

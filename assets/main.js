@@ -28,7 +28,7 @@ $(function() {
             clicked = true;
             $('.main-section').fadeOut(750, function() {
                 $.ajax({
-                    url: 'index.php/main/all_have_sinned_and_fall_short_of_the_glory_of_god',
+                    url: 'all_have_sinned_and_fall_short_of_the_glory_of_god',
                     type: 'GET',
                     dataType: 'json',
                     success: function(data) {
