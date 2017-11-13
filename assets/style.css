@@ -1,0 +1,14 @@
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+html {
+    background-color: #343434;
+}
+
+.main-section {
+    background-color: #ffffff;
+}

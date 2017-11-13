@@ -15,6 +15,8 @@ class Main extends CYM_Controller {
     // Shows the home page needed
     public function index() {
 
+
+        $this->load->view('main/index');
     }
 }
 
