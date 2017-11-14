@@ -25,7 +25,7 @@
             </ul>
 
             <ul class="right hide-on-med-and-down">
-                <li><a class="modal-trigger" href="#submit_confession_modal">Submit</a></li>
+                <li><a class="modal-trigger" href="#submit_confession_modal" id="submit_down_nav">Submit</a></li>
             </ul>
 
             <ul class="right hide-on-med-and-down">
@@ -34,7 +34,7 @@
 
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="<?php echo base_url('main/'); ?>">Read</a></li>
-                <li><a class="modal-trigger" href="#submit_confession_modal">Submit</a></li>
+                <li><a class="modal-trigger" href="#submit_confession_modal" id="submit_side_nav">Submit</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -43,21 +43,18 @@
 
     <!-- Modal stuff here for importing in later on !-->
 
-    <div id="submit_confession_modal" class="modal fixed-footer">
+    <div id="submit_confession_modal" class="modal">
         <div class="modal-content">
             <h4>Add a confession</h4>
-            <form name="confess_form" class="col s12" method="" action="">
+            <form name="confess_form" id="confess_form" class="col s12" method="" action="">
                 <br>
                 <div class="input-field col s12">
                     <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
                     <label for="confession_to_send">Confession</label>
                 </div>
 
-                <center><button class="btn green waves-effect waves-light" type="button">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
+                <center><button class="btn green waves-effect waves-light" type="submit">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
             </form>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="small modal-close waves-effect waves-green btn-flat ">Submit</a>
         </div>
     </div>
 
