@@ -53,7 +53,12 @@
                     <label for="confession_to_send">Confession</label>
                 </div>
 
+                <br>
+
                 <center><button class="btn green waves-effect waves-light" type="submit">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
+
+                <br>
+
             </form>
         </div>
     </div>

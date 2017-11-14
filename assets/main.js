@@ -26,7 +26,25 @@ $(function() {
 
     // Create a confession
     $('#confess_form').submit(function(e) {
-        alert("test");
+        e.preventDefault();
+
+        $.ajax({
+            url: 'blessing_of_your_confession',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                'confession': confession_modal_input.val(),
+            },
+            success: function(data) {
+                $('#submit_confession_modal').modal('close');
+
+                if(data.response == "success") {
+                    Materialize.toast(data.message, 6000, 'grey');
+                } else {
+                    Materialize.toast(data.message, 6000, 'red');
+                }
+            }
+        });
     });
 
     // All the main stuff to show confessions

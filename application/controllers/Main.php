@@ -23,10 +23,22 @@ class Main extends CYM_Controller {
 
     // This will get a confession in the database
     public function all_have_sinned_and_fall_short_of_the_glory_of_god() {
-        $amount = $this->sin_model->get_confession_count()->amount;
-        $id_to_get = rand(1, $amount);
+        $confessions = $this->sin_model->get_confessions();
+        $confessions_size = sizeof($confessions);
 
-        echo json_encode($this->sin_model->get_confession($id_to_get));
+        $id_to_get = rand(1, $confessions_size);
+
+        echo json_encode($this->sin_model->get_confession(array_values($confessions)[$id_to_get - 1]->id));
+    }
+
+    public function blessing_of_your_confession() {
+        $confession = $_POST['confession'];
+
+        if($this->sin_model->confess($confession)) {
+            echo $this->build_response("success", "Confession Added!");
+        } else {
+            echo $this->build_response("error", "Failed to add confession");
+        }
     }
 }
 

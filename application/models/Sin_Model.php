@@ -15,6 +15,16 @@ class Sin_Model extends CI_Model {
         parent::__construct();
     }
 
+    public function get_confessions() {
+        $db = $this->load->database('default', TRUE);
+
+        $query = $db->query("SELECT * FROM confessions")->result();
+
+        $db->close();
+        return $query;
+
+    }
+
     // Returns the amount of confessions in the database
     public function get_confession_count() {
         $db = $this->load->database('default', TRUE);
@@ -32,6 +42,18 @@ class Sin_Model extends CI_Model {
         $query = $db->query("SELECT confession,date(date_created) AS date_created FROM confessions WHERE id = '$id'");
 
         return $query->row();
+        $db->close();
+    }
+
+    // Puts a confession in the database
+    public function confess($confession) {
+        $db = $this->load->database('default', TRUE);
+
+        $date = date('Y-m-d H:i:s');
+
+        $query = $db->query("INSERT INTO confessions (confession, date_created) VALUES ('$confession', '$date')");
+
+        return $db->affected_rows() > 0;
         $db->close();
     }
 }
