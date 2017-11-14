@@ -5,11 +5,54 @@
     font-size: inherit;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 html {
-    background-color: #343434;
+    background-color: #670000;
+}
+
+nav {
+    background-color: #4b4b4b;
+}
+
+h5 {
+    color: #ffffff
+}
+
+p {
+    color: #ffffff
+}
+
+button {
+    background-color: #000000;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #000000;
 }
 
 .main-section {
-    background-color: #ffffff;
+    background-color: #4b4b4b;
     border-radius: 10px;
+}
+
+.page-footer {
+    background-color: #4b4b4b;
+}
+
+.page-footer>.container {
+    background-color: #4b4b4b;
+}
+
+.footer-copyright {
+    background-color: #4b4b4b;
 }

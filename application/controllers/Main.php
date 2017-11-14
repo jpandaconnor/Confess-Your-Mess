@@ -40,6 +40,10 @@ class Main extends CYM_Controller {
             echo $this->build_response("error", "Failed to add confession");
         }
     }
+
+    public function about() {
+        // About page will be finished once all the styling is done
+    }
 }
 
 ?>

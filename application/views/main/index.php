@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="grey darken-2" role="navigation">
+    <nav class="" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">About</a></li>
@@ -43,44 +43,72 @@
 
     <!-- Modal stuff here for importing in later on !-->
 
-    <div id="submit_confession_modal" class="modal">
-        <div class="modal-content">
-            <h4>Add a confession</h4>
-            <form name="confess_form" id="confess_form" class="col s12" method="" action="">
-                <br>
-                <div class="input-field col s12">
-                    <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
-                    <label for="confession_to_send">Confession</label>
-                </div>
+    <main>
+        <div id="submit_confession_modal" class="modal">
+            <div class="modal-content">
+                <h4>Add a confession</h4>
+                <form name="confess_form" id="confess_form" class="col s12" method="" action="">
+                    <br>
+                    <div class="input-field col s12">
+                        <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
+                        <label for="confession_to_send">Confession</label>
+                    </div>
 
-                <br>
+                    <br>
 
-                <center><button class="btn green waves-effect waves-light" type="submit">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
+                    <center><button class="btn green waves-effect waves-light" type="submit">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
 
-                <br>
+                    <br>
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div class="section" id="index-banner" style="margin-top: 250px;">
-        <div class="container main-section" style="display: none;">
-            <br>
+        <div class="section" id="index-banner" style="margin-top: 250px;">
+            <div class="container main-section" style="display: none;">
+                <br>
                 <div class="row center" style="padding: 0 20px 0 20px">
                     <h5 class="header col s12 light" id="confession_text"></h5>
                 </div>
 
                 <div class="row center">
-                    <button type="button" class="waves-effect waves-light btn" style="border-radius: 10px;" id="read_another">Read Another</button>
+                    <button type="button" class="waves-effect waves-light btn" style="border-radius: 10px; background-color: #c50000" id="read_another">Read Another</button>
                 </div>
 
                 <div class="row right" style="margin-right: 20px;">
-                <p id="date_posted"></p>
-            </div>
-            <br><br>
+                    <p id="date_posted"></p>
+                </div>
+                <br><br>
 
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="page-footer" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
