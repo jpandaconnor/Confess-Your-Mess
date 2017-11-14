@@ -43,14 +43,14 @@
 
     <!-- Modal stuff here for importing in later on !-->
 
-    <main>
-        <div id="submit_confession_modal" class="modal">
+    <main style=" vertical-align: middle;">
+        <div id="submit_confession_modal" class="modal" style="border-radius: 10px;">
             <div class="modal-content">
                 <h4>Add a confession</h4>
                 <form name="confess_form" id="confess_form" class="col s12" method="" action="">
                     <br>
                     <div class="input-field col s12">
-                        <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate">
+                        <input placeholder="" id="confession_to_send" name="confession_to_send" type="text" class="validate" data-length="80" maxlength="80">
                         <label for="confession_to_send">Confession</label>
                     </div>
 
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <div class="section" id="index-banner" style="margin-top: 250px;">
+        <div class="section" id="index-banner" style="">
             <div class="container main-section" style="display: none;">
                 <br>
                 <div class="row center" style="padding: 0 20px 0 20px">

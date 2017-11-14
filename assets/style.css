@@ -13,6 +13,8 @@ body {
 
 main {
     flex: 1 0 auto;
+    top: 50%;
+    left: 50%;
 }
 
 html {
@@ -51,6 +53,10 @@ label {
 .main-section {
     background-color: #4b4b4b;
     border-radius: 10px;
+
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
 }
 
 .page-footer {
@@ -76,10 +82,10 @@ label {
 
 /* label focus color */
 .input-field input:focus + label {
-    color: red !important;
+    color: white !important;
 }
 /* label underline focus color */
 .input-field input:focus {
-    border-bottom: 1px solid blue !important;
-    box-shadow: 0 1px 0 0 blue !important
+    border-bottom: 1px solid #c50000 !important;
+    box-shadow: 0 1px 0 0 #c50000 !important
 }
