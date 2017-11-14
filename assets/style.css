@@ -23,6 +23,10 @@ nav {
     background-color: #4b4b4b;
 }
 
+h4 {
+    color: #ffffff
+}
+
 h5 {
     color: #ffffff
 }
@@ -33,6 +37,10 @@ p {
 
 button {
     background-color: #000000;
+}
+
+label {
+    color: #ffffff;
 }
 
 .btn {
@@ -55,4 +63,23 @@ button {
 
 .footer-copyright {
     background-color: #4b4b4b;
+}
+
+.modal {
+    background-color: #4b4b4b;
+}
+
+.input-field {
+    color: #ffffff;
+}
+
+
+/* label focus color */
+.input-field input:focus + label {
+    color: red !important;
+}
+/* label underline focus color */
+.input-field input:focus {
+    border-bottom: 1px solid blue !important;
+    box-shadow: 0 1px 0 0 blue !important
 }

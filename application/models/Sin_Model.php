@@ -15,6 +15,7 @@ class Sin_Model extends CI_Model {
         parent::__construct();
     }
 
+    // Gets all the confessions that we can pull
     public function get_confessions() {
         $db = $this->load->database('default', TRUE);
 

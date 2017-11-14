@@ -12,8 +12,6 @@ $(function() {
 
     var confession_modal_input = $('#confession_to_send');
 
-
-
     // Clears the create confession modal when needed
 
     $('#submit_down_nav').click(function(e) {

@@ -56,7 +56,7 @@
 
                     <br>
 
-                    <center><button class="btn green waves-effect waves-light" type="submit">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
+                    <center><button class="btn waves-effect waves-light" type="submit" style="border-radius: 10px; background-color: #c50000">Submit Confession<i class="material-icons right">playlist_add</i></button></center>
 
                     <br>
 
