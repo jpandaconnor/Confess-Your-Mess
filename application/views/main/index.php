@@ -88,7 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Confess your mess</h5>
+                    <h5 class="white-text">Confess Your Mess</h5>
                     <p class="grey-text text-lighten-4">Thank you for visiting Confess Your Mess. </p>
                     <p class="grey-text text-lighten-4">I hope you enjoy using this fun project that I've created. See the links alongside for more information.</p>
                 </div>
