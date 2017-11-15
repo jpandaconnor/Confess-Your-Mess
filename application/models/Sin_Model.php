@@ -52,7 +52,9 @@ class Sin_Model extends CI_Model {
 
         $date = date('Y-m-d H:i:s');
 
-        $query = $db->query("INSERT INTO confessions (confession, date_created) VALUES ('$confession', '$date')");
+        $confession = $db->escape($confession);
+
+        $query = $db->query("INSERT INTO confessions (confession, date_created) VALUES ($confession, '$date')");
 
         return $db->affected_rows() > 0;
         $db->close();
