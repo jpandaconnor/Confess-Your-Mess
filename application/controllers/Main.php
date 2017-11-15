@@ -34,10 +34,14 @@ class Main extends CYM_Controller {
     public function blessing_of_your_confession() {
         $confession = $_POST['confession'];
 
-        if($this->sin_model->confess($confession)) {
-            echo $this->build_response("success", "Confession Added!");
-        } else {
+        if(strlen($confession) > 80) {
             echo $this->build_response("error", "Failed to add confession");
+        } else {
+            if($this->sin_model->confess($confession)) {
+                echo $this->build_response("success", "Confession Added!");
+            } else {
+                echo $this->build_response("error", "Failed to add confession");
+            }
         }
     }
 
