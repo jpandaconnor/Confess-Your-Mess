@@ -19,7 +19,8 @@
 <body>
 
     <nav class="" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="modal-trigger" href="#about_modal" id="about_down_nav">About</a></li>
             </ul>

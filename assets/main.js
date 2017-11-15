@@ -4,6 +4,7 @@
 $(function() {
 
     $('.modal').modal();
+    $(".button-collapse").sideNav();
 
     var clicked = false;
 
