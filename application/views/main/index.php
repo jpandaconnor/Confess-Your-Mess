@@ -43,7 +43,7 @@
 
     <!-- Modal stuff here for importing in later on !-->
 
-    <main style=" vertical-align: middle;">
+    <main>
         <div id="submit_confession_modal" class="modal" style="border-radius: 10px;">
             <div class="modal-content">
                 <h4>Add a confession</h4>
