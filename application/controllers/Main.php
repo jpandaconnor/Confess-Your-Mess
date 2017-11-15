@@ -4,6 +4,8 @@
  * User: JPanda
  * Date: 13/11/2017
  * Time: 19:53
+ *
+ * READY FOR UPLOAD - 15/11/2017
  */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -16,7 +18,6 @@ class Main extends CYM_Controller {
 
     // On load, loads a confession via JS AJAX
     public function index() {
-
         $this->load->view('main/index');
     }
 
