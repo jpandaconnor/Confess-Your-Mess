@@ -21,7 +21,7 @@
     <nav class="" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Confess Your Mess</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="">About</a></li>
+                <li><a class="modal-trigger" href="#about_modal" id="about_down_nav">About</a></li>
             </ul>
 
             <ul class="right hide-on-med-and-down">
@@ -35,7 +35,7 @@
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="<?php echo base_url('main/'); ?>">Read</a></li>
                 <li><a class="modal-trigger" href="#submit_confession_modal" id="submit_side_nav">Submit</a></li>
-                <li><a href="#">About</a></li>
+                <li><a class="modal-trigger" href="#about_modal" id="about_side_nav">About</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -61,6 +61,30 @@
                     <br>
 
                 </form>
+            </div>
+        </div>
+
+        <div id="about_modal" class="modal" style="border-radius: 10px;">
+            <div class="modal-content">
+                <h4>About</h4>
+
+                <br>
+
+                <p>This was a fun little project started on the 13th of November 2017 and finished on the 15th Novemeber 2017</p>
+                <p>This website was based upon a website that I found whilst browsing the deep/dark web (Whatever you want to call it)</p>
+                <p>Add a confession. No one will know who you are. Nothing is tracked.</p>
+                <p>For the nerds, this was created using MaterializeCSS, Codeigniter Framework (PHP) and MySQL</p>
+                <br>
+
+                <p>Stay safe and enjoy</p>
+
+                <br>
+
+                <p>~ Panda</p>
+
+                <br>
+
+                <p>P.S: Don't steal my shit. Thanks <3</p>
             </div>
         </div>
 
