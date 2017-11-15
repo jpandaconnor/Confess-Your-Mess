@@ -122,6 +122,7 @@
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="http://www.jpanda.org">Website</a></li>
                         <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/jpandaorg">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/jpandaconnor/Confess-Your-Mess">Github</a></li>
                         <li><a class="grey-text text-lighten-3" href="mailto:connor@jpanda.org">Email</a></li>
                     </ul>
                 </div>
