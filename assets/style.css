@@ -103,6 +103,14 @@ label {
     color: #ffffff;
 }
 
+.side-nav {
+    background-color: #4b4b4b;
+}
+
+.side-nav li>a {
+    color: #ffffff;
+}
+
 
 /* label focus color */
 .input-field input:focus + label {
